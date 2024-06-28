@@ -1,18 +1,18 @@
-# About
+# 모듈에 대하여 
 
-This package is a terraform module to provision a bastion on Openstack
+이 패키지는 Openstack에서 배스천을 프로비저닝하기 위한 Terraform 모듈입니다.
 
-The provisioned bastion is meant to customizable (within the confines of use cases encountered so far) and the module is conservative about the dependant resources it provisions, externalizing many of those concerns in order to provide greater flexibility.
+프로비저닝된 요새는 사용자 정의가 가능하며(지금까지 발생한 사용 사례의 범위 내에서) 모듈은 프로비저닝하는 종속 리소스에 대해 보수적이므로 더 큰 유연성을 제공하기 위해 이러한 문제 중 많은 부분을 외부화합니다.
 
-The bastion provision docker as part of its cloud-init logic.
+cloud-init 논리의 일부인 요새 프로비저닝 도커입니다.
 
-# Usage
+# 사용법
 
-## Variables
+## 변수 선언
 
-The module takes the following variables as input:
+모듈은 다음 변수를 입력으로 사용합니다.
 
-- **name**: Name to give to the vm
+- **name**: VM 인스턴스 이름
 - **image_source**: Source of the image to provision the bastion on. It takes the following keys (only one of the two fields should be used, the other one should be empty):
   - **image_id**: Id of the image to associate with a vm that has local storage
   - **volume_id**: Id of a volume containing the os to associate with the vm
