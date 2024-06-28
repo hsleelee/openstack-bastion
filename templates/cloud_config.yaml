@@ -1,0 +1,21 @@
+#cloud-config
+write_files:
+  - path: /opt/id_rsa
+    owner: root:root
+    permissions: "0600"
+    content: |
+      ${indent(6, private_key)}
+  - path: /opt/id_rsa.pub
+    owner: root:root
+    permissions: "0600"
+    content: ${public_key}
+runcmd:
+  - mv /opt/id_rsa* /home/${ssh_user}/.ssh/
+  - chown ${ssh_user}:${ssh_user} /home/${ssh_user}/.ssh/id_rsa
+  - chown ${ssh_user}:${ssh_user} /home/${ssh_user}/.ssh/id_rsa.pub
+  #Install docker
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+  - add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  - apt-get update
+  - apt-get install -y docker-ce docker-ce-cli containerd.io
+  - systemctl enable docker
