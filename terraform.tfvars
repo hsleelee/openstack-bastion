@@ -22,7 +22,7 @@ network_port =  {
 external_keypair_name = "datacentric_adm_key" 
 
 #Value of the private part of the ssh keypair that the bastion will use to ssh on instances
-internal_private_key = <<EOF
+internal_private_key = <<EOT
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEAmVKJcnwlMBv139pHgP1sfplsuEhhxTlMnsZ3qGi0wKNmGZf1
 M2yIXBtsVW7gMFBNi6dGiz4AlHe+LszWu63AFOrzMTLhY2pCFW0fSRoZunGWO0MI
@@ -50,7 +50,7 @@ KL1AgQKBgQCKd4ikNjyTjvNvTbegdeD6aCGBqwboWDz5ahPfnZu1x2yhi0Mj7z3c
 SW/ElIIu94QDfjGgf7aWquZhp1s0or5IVPs8fXCCb5SDeBPIeAowtVl6b/zqwym6
 dZ/mrQ52PWmpCefRm/Hl8vGnMZL7lGiieowISbmrf2kxuI0WPhf8OQ==
 -----END RSA PRIVATE KEY-----
-EOF
+EOT
 
 #Value of the public part of the ssh keypair that the bastion will use to ssh on instances
 internal_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZUolyfCUwG/Xf2keA/Wx+mWy4SGHFOUyexneoaLTAo2YZl/UzbIhcG2xVbuAwUE2Lp0aLPgCUd74uzNa7rcAU6vMxMuFjakIVbR9JGhm6cZY7QwiwI9Sk3A2SeXB1imppp/bd19h3XbJAXh2VLGbouhjWNA2ZYqvQoxr9NUOAAbhrLbXeYNG74ZuqhhomD5B6aYzvmxU3xikSjcKUuyzOnyznkgKS9krKNAHioi7vtTEZYx6/M3YWAPBfJzs4mtkiFTnJsUSaS4pvIFbAUNaT/iXJTyalWWyUHlXFIeqNMzgCAx3yliniWe302PmXWI/ODUA5Hqdu1hK/9+2yIQkT Generated-by-Nova"
