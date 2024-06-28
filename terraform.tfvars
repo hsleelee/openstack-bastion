@@ -3,7 +3,7 @@
 #openstack_api_url = "" #  Opestanck  정보 확인 후 수정 필요
 
 # vm name
-name = "bstn01.datacentric.dev"
+name = "bstn02.datacentric.dev"
 
 # os image d3f8fc14-d2f3-469b-bb05-de207c088524
 image_source = {image_id="67ccb087-dcda-4067-98b1-cac7fa1ad0ea",volume_id=""}
