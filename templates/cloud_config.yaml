@@ -4,33 +4,7 @@ write_files:
     owner: root:root
     permissions: "0600"
     content: |
-      ${indent(6,  "-----BEGIN RSA PRIVATE KEY-----
-                    MIIEpAIBAAKCAQEAmVKJcnwlMBv139pHgP1sfplsuEhhxTlMnsZ3qGi0wKNmGZf1
-                    M2yIXBtsVW7gMFBNi6dGiz4AlHe+LszWu63AFOrzMTLhY2pCFW0fSRoZunGWO0MI
-                    sCPUpNwNknlwdYpqaaf23dfYd12yQF4dlSxm6LoY1jQNmWKr0KMa/TVDgAG4ay21
-                    3mDRu+GbqoYaJg+QemmM75sVN8YpEo3ClLsszp8s55ICkvZKyjQB4qIu77UxGWMe
-                    vzN2FgDwXyc7OJrZIhU5ybFEmkuKbyBWwFDWk/4lyU8mpVlslB5VxSHqjTM4AgMd
-                    8pYp4lnt9Nj5l1iPzg1AOR6nbtYSv/ftsiEJEwIDAQABAoIBAATVV0Pmqf10RDIE
-                    XZCxbIQpLgY5MevXvJScyRTkCB6yh/tykOZIG5xbuPSQhDzBq1Alu9GT6MzFYZd0
-                    Gajc91sxdO0uH3DU3rRyNjRFwF3iSswfdtympIN19G+TqHnsHSKritq/fTF2ILJq
-                    xR/4wF3B0BqglXUqaSQwoB8vWKtmVfSmsnvaMl2SA4JK14WNV586uwjAbyZ+qhXU
-                    T5NcrV/TjBHSMjbtR3fT+u2PNmfVxDt4CN0ATZiQA6TFGz8vVLIsCCqzq/Tg8Yrc
-                    82PH2Hr+tgD0graLwW29GwNhNSphbM3EZVVkfXUVYfUHiW/gcZgB7LhVSWMOgGPg
-                    HJAwYQECgYEA1hDstreyMIM2ikDAM1JFblnuyXh/5cJh8iTXoEs6vjmxX8FDV4tg
-                    ON8vl1XC0mt0pHZXGylpCuZPqH7p4pr7cO4SaLmgyz/8sqmDJd5kYBWY0lxuxvHg
-                    s0/S7E9DDJdzwshrqxS7DHJfE8OANlVwszcPhNZrV5H29wPTYsD4AFMCgYEAt1tp
-                    f7PbNfF/Ed7zBz4+9bInteYyPrVaOtUgxWT6hFPiqYqkaPhIs1xXGFSZet5wH3Ez
-                    n9UWrIEGwPayz8gtLQkMMSBwy4+52YfYY5hqUvN3yezvx6fEEJAP127neSXAjN4+
-                    l5ILVb7uVQ+0pZdrRduyjUI8JPJyIqCShXPkvEECgYAW5aSMPsXejops61QjqS8o
-                    CJKUFkGH7+zOG8a8rI9R/ZXNajyrxoq6SpUqmM/H9hp55PaYPyuvMMdgfILD7FPs
-                    1mo9rW1XkDaVXbBbgpg19tlr1ts6iHDCfU1QXYIMfL6zHQD3QbZoNGubD5RNO4Jc
-                    iQ0t5kmBCmniLhSUQZPFZQKBgQCNMSUiIztwZJB3EHmQYExXImMV3TdftoLOvwPH
-                    PSTz9SybZZmJA3foNfkTUUIGrXclnyQjthEJsSmkOdQj0H+JKGhtBBAXkIuKiOMG
-                    fn2Rds4Nfhh+ZB/EqUqpmEtCrOGDGDiWuu1jj+0zLy7qPJlsZ+ssf46U3OUq6P8r
-                    KL1AgQKBgQCKd4ikNjyTjvNvTbegdeD6aCGBqwboWDz5ahPfnZu1x2yhi0Mj7z3c
-                    SW/ElIIu94QDfjGgf7aWquZhp1s0or5IVPs8fXCCb5SDeBPIeAowtVl6b/zqwym6
-                    dZ/mrQ52PWmpCefRm/Hl8vGnMZL7lGiieowISbmrf2kxuI0WPhf8OQ==
-                    -----END RSA PRIVATE KEY-----")}
+      ${indent(6,private_key)}
   - path: /opt/id_rsa.pub
     owner: root:root
     permissions: "0600"
