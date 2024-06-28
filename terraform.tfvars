@@ -22,7 +22,7 @@ network_port =  {
 external_keypair_name = "datacentric_adm_key" 
 
 #Value of the private part of the ssh keypair that the bastion will use to ssh on instances
-internal_private_key = <<EOT
+internal_private_key = <<-EOT
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEAmVKJcnwlMBv139pHgP1sfplsuEhhxTlMnsZ3qGi0wKNmGZf1
 M2yIXBtsVW7gMFBNi6dGiz4AlHe+LszWu63AFOrzMTLhY2pCFW0fSRoZunGWO0MI
