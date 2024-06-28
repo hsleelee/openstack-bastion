@@ -5,8 +5,8 @@
 # vm name
 name = "bstn01.datacentric.dev"
 
-# os image 67ccb087-dcda-4067-98b1-cac7fa1ad0ea
-image_source = {image_id="",volume_id="d3f8fc14-d2f3-469b-bb05-de207c088524"}
+# os image d3f8fc14-d2f3-469b-bb05-de207c088524
+image_source = {image_id="67ccb087-dcda-4067-98b1-cac7fa1ad0ea",volume_id=""}
 
 #ID of the flavor the bastion will run on or name
 #flavor_id = "ca295cf2-64aa-4adf-b5b2-75e8b581f99b"
