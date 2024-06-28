@@ -3,10 +3,10 @@
 #openstack_api_url = "" #  Opestanck  정보 확인 후 수정 필요
 
 # vm name
-name = "bstn-host"
+name = "bstn01.datacentric.dev"
 
 # os image 
-image_source = {image_id="c6bb9bb8-bbaa-473a-a744-370293bfa35b",volume_id=""}
+image_source = {image_id="67ccb087-dcda-4067-98b1-cac7fa1ad0ea",volume_id="d3f8fc14-d2f3-469b-bb05-de207c088524"}
 
 #ID of the flavor the bastion will run on or name
 flavor_id = "ca295cf2-64aa-4adf-b5b2-75e8b581f99b"
@@ -19,7 +19,7 @@ network_port =  {
   }
 
 #Name of the external keypair that will be used to ssh to the bastion
-external_keypair_name = "datacentric_adm_key" 
+external_keypair_name = "datacentric_k8s_key" 
 
 #Value of the private part of the ssh keypair that the bastion will use to ssh on instances
 internal_private_key = ""
