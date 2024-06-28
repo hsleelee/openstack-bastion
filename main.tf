@@ -17,7 +17,7 @@ data "template_cloudinit_config" "bastion_config" {
       "${path.module}/templates/cloud_config.yaml",
       {
         public_key  = var.internal_public_key,
-        private_key = var.internal_private_key
+#        private_key = var.internal_private_key
         ssh_user    = var.ssh_user
       }
     )
