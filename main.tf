@@ -2,7 +2,7 @@ locals {
   block_devices = var.image_source.volume_id != "" ? [{
     uuid                  = var.image_source.volume_id
     source_type           = "volume"
-    boot_index            = 1
+    boot_index            = 0
     destination_type      = "volume"
     delete_on_termination = false
   }] : []

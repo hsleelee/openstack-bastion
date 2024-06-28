@@ -13,9 +13,9 @@ cloud-init 논리의 일부인 요새 프로비저닝 도커입니다.
 모듈은 다음 변수를 입력으로 사용합니다.
 
 - **name**: VM 인스턴스 이름
-- **image_source**: Source of the image to provision the bastion on. It takes the following keys (only one of the two fields should be used, the other one should be empty):
-  - **image_id**: Id of the image to associate with a vm that has local storage
-  - **volume_id**: Id of a volume containing the os to associate with the vm
+- **image_source**: 인스턴스 프로비저닝할 이미지의 소스입니다. 다음 키가 필요합니다(두 필드 중 하나만 사용해야 하며 다른 필드는 비어 있어야 합니다) :
+  - **image_id**: 로컬 저장소가 있는 VM과 연결할 이미지의 ID
+  - **volume_id**: VM과 연결할 OS가 포함된 볼륨의 ID
 - **flavor_id**: ID of the image to provision the bastion on.
 - **network_port**: Resource of type **openstack_networking_port_v2** to assign to the vm for network connectivity
 - **external_keypair_name**: Name of the keypair that will be used to ssh to the bastion from outside the network
